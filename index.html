@@ -3,25 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LaDarkSquad - Officiel</title>
+<title>LaDarkSquad - Official</title>
 <style>
-  body { background:#0a0a0a; color:white; font-family: Arial; text-align:center; margin:0; }
-  header { padding:80px 20px; background: linear-gradient(135deg, #6a00ff, #000); }
-  h1 { font-size:3em; letter-spacing:4px; }
-  .btn { background:white; color:black; padding:12px 25px; border-radius:25px; text-decoration:none; font-weight:bold; }
-  section { padding:40px 20px; }
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@400;600&display=swap');
+body{margin:0;background:#0a0a12;color:white;font-family:'Poppins',sans-serif;overflow-x:hidden}
+.hero{height:85vh;background:radial-gradient(circle at 30% 30%, #6a11cb, #000);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
+.hero h1{font-family:'Orbitron',sans-serif;font-size:55px;margin:0;letter-spacing:3px;text-shadow:0 0 20px #8a2be2}
+.hero span{color:#a855f7}
+.hero p{opacity:0.8;margin-top:15px;font-size:18px}
+.btn{margin-top:25px;background:white;color:black;padding:12px 28px;border-radius:30px;text-decoration:none;font-weight:600;transition:0.3s}
+.btn:hover{transform:scale(1.05);box-shadow:0 0 20px white}
+.section{padding:50px 20px;max-width:1000px;margin:auto;text-align:center}
+.cards{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.card{background:#151522;border:1px solid #2a2a3a;border-radius:18px;padding:25px;width:250px;transition:0.3s}
+.card:hover{transform:translateY(-8px);border-color:#8a2be2;box-shadow:0 10px 30px rgba(138,43,226,0.3)}
+.card h3{margin:10px 0 5px 0;font-family:'Orbitron'}
+.footer{padding:30px;background:#050508;text-align:center;opacity:0.6;font-size:14px;margin-top:40px}
 </style>
 </head>
 <body>
-  <header>
-    <h1>LaDarkSquad</h1>
-    <p>La team qui ne dort jamais.</p>
-    <br>
-    <a class="btn" href="mailto:ladarksquad.officiel@gmail.com">Nous contacter</a>
-  </header>
-  <section>
-    <h2>Qui sommes-nous ?</h2>
-    <p>On est une squad passionnée, on joue ensemble, on gagne ensemble.</p>
-  </section>
+<div class="hero">
+<h1>La<span>Dark</span>Squad</h1>
+<p>La team qui ne dort jamais. Fortnite | Roblox | GTA V</p>
+<a class="btn" href="#jeux">Découvrir la squad</a>
+</div>
+
+<div class="section" id="jeux">
+<h2>Nos Terrains de Jeu</h2>
+<div class="cards">
+<div class="card"><h3>🔥 Fortnite</h3><p>Build, zero build, on claque des top 1 ensemble.</p></div>
+<div class="card"><h3>🧱 Roblox</h3><p>Des modes custom, du fun, et des events de la squad.</p></div>
+<div class="card"><h3>🚗 GTA V</h3><p>RP, braquages, courses. La rue nous appartient.</p></div>
+</div>
+</div>
+
+<div class="section" style="background:#11111f;border-radius:20px;margin-top:20px">
+<h2>Rejoins-nous</h2>
+<p>Le Discord arrive très bientôt. Reste connecté.</p>
+<a class="btn" href="#">Discord - Bientôt</a>
+<p style="margin-top:20px;font-size:13px;opacity:0.5">Contact : ladarksquad.officiel@gmail.com</p>
+</div>
+
+<div class="footer">© 2026 LaDarkSquad - Créé par le fondateur</div>
 </body>
 </html>
